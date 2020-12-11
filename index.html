@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <a href="./index.html">isEven</a>
+        <a href="./isprime.html">isPrime</a>
+        <a href="./pluck.html">Pluck</a>
+        <a href="./vowels.html">Vowels</a>
+      </div><br>
+      
+    <script>
+
+        function isEven(userInput){
+
+            if(userInput % 2 === 0){
+                var even = true;
+                return even;
+            }
+            else{
+                var notEven = false;
+                return notEven;
+            }
+        }
+        var userInput = +prompt("Please Enter a Number");
+
+        document.write("isEven is " + isEven(userInput));
+
+    </script>
+</body>
+</html>

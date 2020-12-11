@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div>
+  <a href="./index.html">isEven</a>
+  <a href="./isprime.html">isPrime</a>
+  <a href="./pluck.html">Pluck</a>
+  <a href="./vowels.html">Vowels</a>
+</div>
+<br>
+    <script>
+
+function test_prime(n)
+{
+
+  if (n===1)
+  {
+    return false;
+  }
+  else if(n === 2)
+  {
+    return true;
+  }else
+  {
+    for(var x = 2; x < n; x++)
+    {
+      if(n % x === 0)
+      {
+        console.log(x)
+        console.log(n)
+        return false;
+      }
+    }
+    return true;  
+  }
+}
+var userInput = +prompt("Please Enter a Number");
+document.write("isPrime is " +  test_prime(userInput));
+
+    </script>
+</body>
+</html>

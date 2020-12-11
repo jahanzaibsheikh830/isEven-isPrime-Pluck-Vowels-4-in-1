@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <a href="./index.html">isEven</a>
+        <a href="./isprime.html">isPrime</a>
+        <a href="./pluck.html">Pluck</a>
+        <a href="./vowels.html">Vowels</a>
+      </div>
+      <br>
+    <script>
+        var arr = [23,33,3,53,35,24,2,42,5]
+
+        function pluck(arr){
+            var ran = Math.round(Math.random()* arr.length-1);
+            return arr[ran];
+        }
+        document.write("Pluck a random number " + pluck(arr));
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <a href="./index.html">isEven</a>
+        <a href="./isprime.html">isPrime</a>
+        <a href="./pluck.html">Pluck</a>
+        <a href="./vowels.html">Vowels</a>
+      </div>
+    <script>
+        function count(userInput) {
+            var vowel_list = 'aeiouAEIOU';
+            var vcount = 0;
+
+            for (var x = 0; x < userInput.length; x++) {
+                if (vowel_list.indexOf(userInput[x]) !== -1) {
+                    vcount++;
+                }
+            }
+            return vcount;
+        }
+        var userInput = prompt("Enter a word")
+        document.write("Total vowels in given string is " + count(userInput));
+
+
+    </script>
+</body>
+
+</html>
